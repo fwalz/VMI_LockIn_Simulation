@@ -25,7 +25,7 @@ duration = 0.1  # Duration of the signal in seconds
 r = 1 #Signal Amplitude
 phi = np.pi/6 #Signal Phase
 
-# Lock-in paremeters
+# Lock-in parameters
 freq = 100
 w = freq*2*np.pi #Lock-in/ Chopper angular freq. for f = 200 Hz
 
@@ -41,7 +41,7 @@ print('Freq =',w/(2*np.pi), 'Hz')
 print('Time resolution =',tf/N*1e3, 'ms')
 print('Integration time =',w*T/(2*np.pi),'periods')
 
-#(Unphysical) Variables initailization 
+#(Unphysical) Variables initialization
 X = np.zeros(N)
 Y = np.zeros(N)
 sig_out = np.zeros(N)
